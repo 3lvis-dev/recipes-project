@@ -33,8 +33,6 @@ const UsersRecipes = db.define('users_recipes', {
       model: Recipes
     }
   },
-}, {
-  timestamps: false
 });
 
 module.exports = UsersRecipes
