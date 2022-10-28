@@ -1,13 +1,38 @@
 const db = require('../utils/database');
 const { DataTypes } = require('sequelize');
+const Users = require('./users.models')
+const Ingredients = require('./ingredients.models')
 
-
-const BBDD = db.define('BBDD', {
+const UsersIngredients = db.define('users_ingredients', {
   id: {
     type: DataTypes.UUID,
     primaryKey: true,
     allowNull: false
   },
+  amount: {
+    type: DataTypes.STRING,
+    allowNull: false
+  },
+  userId: {
+    type: DataTypes.UUID,
+    allowNull: false,
+    field: 'user_id',
+    references: {
+      key: 'id',
+      model: Users
+    }
+  },
+  ingredientId: {
+    type: DataTypes.UUID,
+    allowNull: false,
+    field: 'ingredient_id',
+    references: {
+      key: 'id',
+      model: Ingredients
+    }
+  }
+}, {
+  timestamps: false
 });
 
-module.exports = Categories
+module.exports = UsersIngredients
