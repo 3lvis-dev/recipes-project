@@ -31,8 +31,6 @@ const UsersIngredients = db.define('users_ingredients', {
       model: Ingredients
     }
   }
-}, {
-  timestamps: false
 });
 
 module.exports = UsersIngredients
