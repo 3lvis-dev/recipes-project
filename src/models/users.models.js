@@ -1,67 +1,66 @@
-const db = require('../utils/database');
+const db = require("../utils/database");
 
-const { DataTypes } = require('sequelize')
+const { DataTypes } = require("sequelize");
 
-const Users = db.define('users', {
+const Users = db.define("users", {
   id: {
     type: DataTypes.UUID,
     primaryKey: true,
-    allowNull: false
+    allowNull: false,
   },
   firstName: {
     type: DataTypes.STRING,
     allowNull: false,
-    field: 'first_name'
+    field: "first_name",
   },
-  lastName:{
+  lastName: {
     type: DataTypes.STRING,
     allowNull: false,
-    field: 'last_name'
+    field: "last_name",
   },
-  email:{
+  email: {
     type: DataTypes.STRING,
     allowNull: false,
     unique: true,
     validate: {
-      isEmail: true
+        isEmail: true
     }
   },
-  password:{
+  password: {
     type: DataTypes.STRING,
     allowNull: false
   },
-  phone:{
-    type: DataTypes.STRING,
+  phone: {
+    type: DataTypes.STRING, // +52 
     allowNull: false,
     unique: true
   },
-  birthday:{
+  birthday: {
     type: DataTypes.DATEONLY,
-    allowNull: false
+    allowNull: false,
   },
-  gender:{
+  gender: {
     type: DataTypes.STRING,
   },
-  role:{
+  role: {
     type: DataTypes.STRING,
     allowNull: false,
     defaultValue: 'normal'
   },
-  country:{
+  country: {
     type: DataTypes.STRING,
   },
-  status:{
+  status: {
     type: DataTypes.STRING,
     allowNull: false,
     defaultValue: 'active'
   },
-  isVerified:{
+  isVerified: {
     type: DataTypes.BOOLEAN,
     allowNull: false,
     field: 'is_verified',
     defaultValue: false
-  }
-})
-
+  },
+});
 
 module.exports = Users
