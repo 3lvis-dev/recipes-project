@@ -18,7 +18,8 @@
 
 ---
 
-# Orden para crear los seeders
+## Guia para Seeders
+### Orden para crear los seeders
 - //user 
   - node ./src/utils/seeders/users.js
 
@@ -39,3 +40,4 @@
 
 - //recipes_ingredients 
   - node ./src/utils/seeders/recipe_ingredients.js 
+

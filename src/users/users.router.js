@@ -26,6 +26,9 @@ router.route('/me')
     userServices.deleteMyUser
   )
 
+  
+// Ruta para obtener mis recetas
+
 
 // Esta sintaxix solo se usa cuando le hacemos peticiones a una misma ruta
 router.route('/:id')
