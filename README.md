@@ -1,7 +1,6 @@
 # Project Recipes 
 
-## Deploy APP:
-[LinkApp](#)
+## Deploy APP: [LinkApp](#)
 
 - Skeleton
 - express: 4.18.2
@@ -41,3 +40,12 @@
 - //recipes_ingredients 
   - node ./src/utils/seeders/recipe_ingredients.js 
 
+------------
+
+# Full Stack Developer and WebMaster WordPress:
+
+| Name | GitHub  | LinkedIn |
+| :------------ |:---------------:| -----:|
+| Elvis Espinoza  | [3lvis-dev](https://github.com/3lvis-dev) | [EE](https://www.linkedin.com/in/elvis-alexander-espinoza-) |
+
+------------
