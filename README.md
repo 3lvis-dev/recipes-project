@@ -43,6 +43,10 @@
 ------------
 
 # Full Stack Developer and WebMaster WordPress:
+<<<<<<< HEAD
+=======
+------------
+>>>>>>> 769877c20ab7a4d6659e9a9cb395d7a41270232d
 
 | Name | GitHub  | LinkedIn |
 | :------------ |:---------------:| -----:|
